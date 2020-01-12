@@ -23,7 +23,7 @@ export default class Recruit extends React.Component{
                     <div>更多</div>
                 </div>
                     <ul style={{"position":"absolute","top":`${this.state.positionList}`+"px"}}>
-                          {
+                          {/* {
                               lists.map((item,index)=>{
                                   return(
                                     <li key={item.id}>
@@ -32,8 +32,8 @@ export default class Recruit extends React.Component{
                                     </li>
                                   )
                               })
-                        }
-                        {/* <li>任德林1</li>
+                        } */}
+                        <li>任德林1</li>
                         <li>任德林2</li>
                         <li>任德林3</li>
                         <li>任德林4</li>
@@ -52,18 +52,18 @@ export default class Recruit extends React.Component{
                         <li>任德林17</li>
                         <li>任德林18</li>
                         <li>任德林19</li>
-                        <li>任德林20</li> */}
+                        <li>任德林20</li>
                     </ul>
             </RecruitCss>
         )
     }
     reqList=()=>{
-        httpGet("https://www.easy-mock.com/mock/5ddf19b786f1b9143b86d220/mockapi/alibaba/list")
-        .then(data=>
-                this.setState({
-                    lists:data.result.list
-                })
-            );
+        // httpGet("https://www.easy-mock.com/mock/5ddf19b786f1b9143b86d220/mockapi/alibaba/list")
+        // .then(data=>
+        //         this.setState({
+        //             lists:data.result.list
+        //         })
+        //     );
     }
     messageRoll=()=>{
                 const aaa = setInterval(()=>{
